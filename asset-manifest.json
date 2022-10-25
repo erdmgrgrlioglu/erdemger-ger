@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/erdemger-ger/static/css/main.18ad18bb.css",
-    "main.js": "/erdemger-ger/static/js/main.d71142ba.js",
+    "main.js": "/erdemger-ger/static/js/main.1951854a.js",
     "index.html": "/erdemger-ger/index.html",
     "main.18ad18bb.css.map": "/erdemger-ger/static/css/main.18ad18bb.css.map",
-    "main.d71142ba.js.map": "/erdemger-ger/static/js/main.d71142ba.js.map"
+    "main.1951854a.js.map": "/erdemger-ger/static/js/main.1951854a.js.map"
   },
   "entrypoints": [
     "static/css/main.18ad18bb.css",
-    "static/js/main.d71142ba.js"
+    "static/js/main.1951854a.js"
   ]
 }
