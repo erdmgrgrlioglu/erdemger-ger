@@ -1,2 +1,11 @@
 # erdemger-ger
-Personal Portfolio Website
+Personal Portfolio Website v 0.1
+
+Used in making: React, Three.js and Sass
+
+_Still under construction..._
+
+# Next Update:
+- There will be a custom Web 3.0 URL
+- Further use of react-three
+- Placeholders will be filled.
