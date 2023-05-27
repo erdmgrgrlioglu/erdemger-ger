@@ -1,0 +1,26 @@
+@use "utilities/variables";
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Orbitron-Light"), local("Orbitron-Regular"),
+    url(https://themes.googleusercontent.com/static/fonts/orbitron/v3/94ug0rEgQO_WuI_xKJMFc_esZW2xOQ-xsNqO47m55DA.woff)
+      format("woff");
+}
+
+div,
+a,
+p,
+li {
+  color: map-get(variables.$colors, "console_green_light");
+  text-decoration: none;
+  font-family: "Orbitron";
+}
+
+body {
+  position: absolute;
+  width: 100%;
+  background-color: map-get(variables.$colors, "bg_color");
+}

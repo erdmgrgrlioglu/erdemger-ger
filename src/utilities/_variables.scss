@@ -1,0 +1,34 @@
+// Colors
+$colors: (
+  "bg_color": #1b0e1e,
+  "console_red_dark": #802f2b,
+  "console_red_light": #d64440,
+  "console_green_dark": #316766,
+  "console_green_light": #4b988a,
+);
+
+$colorpack2: (
+  "bg_color": #1e0f1d,
+  "console_red_dark": #5e0b0b,
+  "console_red_light": #54295c,
+  "console_green_dark": #061f2b,
+  "console_green_light": #467fa1,
+);
+
+$colorpack3: (
+  "bg_color": #001b7e,
+  "console_red_dark": #0b4af9,
+  "console_red_light": #02cefc,
+  "console_green_dark": #3d103c,
+  "console_green_light": #ed006c,
+  "extra": #690759,
+);
+
+//webpack needed!
+:export {
+  bgColor: map-get($colors, "bg_color");
+  consoleRedDark: map-get($colors, "console_red_dark");
+  consoleRedLight: map-get($colors, "console_red_light");
+  consoleGreenDark: map-get($colors, "console_green_dark");
+  consoleGreenLight: map-get($colors, "console_green_light");
+}
