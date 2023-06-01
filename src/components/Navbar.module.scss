@@ -1,10 +1,11 @@
 @use "/src/utilities/variables";
 
 .header {
-  width: 100%;
+  width: 96%;
   height: 60px;
   display: block;
   flex-direction: column;
+  margin: auto;
   align-items: center;
   position: sticky;
   top: 0;
@@ -12,8 +13,7 @@
   z-index: 10;
 }
 
-.flex_container {
-  width: 96%;
+.dropdownItem {
   height: 60px;
   display: flex;
   border: 2px;
@@ -22,11 +22,11 @@
   margin-bottom: 10px;
   flex-direction: row;
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   font-size: 1rem;
 }
 
-.console {
+.text {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -41,7 +41,7 @@
   .time {
     display: none;
   }
-  .console {
+  .text {
     justify-content: left;
   }
 }

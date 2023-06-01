@@ -1,189 +1,58 @@
 @use "/src/utilities/variables";
 
 // Dimensions
-$dot-size: 1px;
-$dot-space: 22px;
-$canvas-size: 450px;
+$site-width: 96%;
 
-.canvasTop {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin: 0 auto;
+.center {
+  margin: auto;
+  width: $site-width;
 }
 
-.siteName {
-  width: 96%;
+.top {
   font-size: 30px;
   font-weight: 600;
-  margin: 0 auto;
 }
 
-.canvas {
-  background: linear-gradient(
-        90deg,
-        map-get(variables.$colors, "bg_color") ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    linear-gradient(
-        map-get(variables.$colors, "bg_color") ($dot-space - $dot-size),
-        transparent 1%
-      )
-      center,
-    map-get(variables.$colors, "console_red_light");
-  background-size: $dot-space $dot-space;
-  width: 96%;
-  height: ($canvas-size + 30) px;
-  margin: 0 auto;
-  animation: blinker 2s linear infinite;
-}
-
-Canvas {
-  height: $canvas-size !important;
-}
-
-@media only screen and (max-width: 500px) {
-  $canvas-size: 300px;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0.7;
-  }
-}
-
-.connectingParent {
-  background-color: map-get(variables.$colors, "console_red_light");
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 600;
-  width: 130px;
-  padding: 2px;
-  margin-right: 20px;
-}
-
-.connectingBackground {
-  background-color: map-get(variables.$colors, "bg_color");
-  height: 18px;
-  width: 21px;
-  margin: auto;
-}
-
-.connectingText {
-  margin: auto;
-}
-
-.connecting {
-  position: relative;
-  top: 6px;
-  margin: auto;
-  animation: connecting 1s infinite linear alternate;
-  animation-delay: 0.5s;
-}
-
-.connecting::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: -7px;
-  animation: connecting 1s infinite alternate;
-  animation-delay: 0s;
-}
-
-.connecting::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 7px;
-  animation: connecting 1s infinite alternate;
-  animation-delay: 1s;
-}
-
-.connecting,
-.connecting::before,
-.connecting::after {
-  width: 6px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: map-get(variables.$colors, "console_green_light");
-  color: map-get(variables.$colors, "console_green_light");
-}
-
-@keyframes connecting {
-  0% {
-    background-color: map-get(variables.$colors, "console_green_light");
-  }
-  50%,
-  100% {
-    background-color: rgba(75, 152, 138, 0.2);
-  }
-}
-
-.bottomContainer {
-  width: 96%;
+.bottom {
   height: 60px;
-  display: flex;
   border-bottom: 1px solid map-get(variables.$colors, "console_green_light");
-  margin-bottom: 10px;
+
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
-.bottomContainerChild {
-  justify-content: center;
-  font-size: 1rem;
-  border: 4px;
-}
-
-//text
-.scrollText {
-  height: 50px;
+.text {
+  display: flex;
+  position: relative;
+  height: 100%;
   width: 40vw;
+  margin: auto;
   overflow: hidden;
-}
-.scrollText p {
-  margin: 0;
-  text-align: center;
-  /* Starting position */
-  -moz-transform: translateX(-200%);
-  -webkit-transform: translateX(-200%);
-  transform: translateX(-200%);
-  /* Apply animation to this element */
-  -moz-animation: scrollText 15s linear infinite;
-  -webkit-animation: scrollText 15s linear infinite;
-  animation: scrollText 15s linear infinite;
+  z-index: 1;
+  &Scroll {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: flex-start;
+    white-space: nowrap;
+    transition: all 1s ease;
+    & > div {
+      display: flex;
+      animation: TextScroll 33s infinite linear;
+    }
+    p {
+      margin: 0;
+      transition: all 2s ease;
+    }
+  }
 }
 
-/* Move it (define the animation) */
-@-moz-keyframes scrollText {
-  0% {
-    -moz-transform: translateX(-300%);
+@keyframes TextScroll {
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    -moz-transform: translateX(100%);
-  }
-}
-@-webkit-keyframes scrollText {
-  0% {
-    -webkit-transform: translateX(-300%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-  }
-}
-@keyframes scrollText {
-  0% {
-    -moz-transform: translateX(-200%); /* Firefox bug fix */
-    -webkit-transform: translateX(-200%); /* Firefox bug fix */
-    transform: translateX(-200%);
-  }
-  100% {
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
-    transform: translateX(100%);
+  to {
+    transform: translateX(-50%);
   }
 }

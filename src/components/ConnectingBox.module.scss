@@ -1,0 +1,69 @@
+@use "/src/utilities/variables";
+
+.background {
+  background-color: map-get(variables.$colors, "console_red_light");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 600;
+  width: 130px;
+  padding: 2px;
+  margin-right: 1vw;
+}
+
+.dotBackground {
+  background-color: map-get(variables.$colors, "bg_color");
+  height: 18px;
+  width: 21px;
+  margin: auto;
+}
+
+.dot {
+  position: relative;
+  top: 6px;
+  margin: auto;
+  animation: dotBlink 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -7px;
+  animation: dotBlink 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 7px;
+  animation: dotBlink 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.dot,
+.dot::before,
+.dot::after {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: map-get(variables.$colors, "console_green_light");
+  color: map-get(variables.$colors, "console_green_light");
+}
+
+@keyframes dotBlink {
+  0% {
+    background-color: map-get(variables.$colors, "console_green_light");
+  }
+  50%,
+  100% {
+    background-color: rgba(75, 152, 138, 0.2);
+  }
+}
+
+.text {
+  margin: auto;
+}
