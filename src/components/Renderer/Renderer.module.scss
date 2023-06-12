@@ -1,0 +1,43 @@
+@use "/src/utilities/variables";
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 22px;
+$canvas-size: 800px;
+
+.background {
+  background: linear-gradient(
+        90deg,
+        map-get(variables.$colors, "bg_color") ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    linear-gradient(
+        map-get(variables.$colors, "bg_color") ($dot-space - $dot-size),
+        transparent 1%
+      )
+      center,
+    map-get(variables.$colors, "console_red_light");
+  background-size: $dot-space $dot-space;
+  height: ($canvas-size + 30) px;
+  animation: blinker 2s linear infinite;
+}
+
+.top {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+Canvas {
+  height: 60vh !important;
+}
+
+@media only screen and (max-width: 500px) {
+  $canvas-size: 300px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.7;
+  }
+}

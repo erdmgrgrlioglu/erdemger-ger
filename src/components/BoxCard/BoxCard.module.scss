@@ -1,0 +1,40 @@
+@use "/src/utilities/variables";
+
+.box {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  border: 2px solid map-get(variables.$colors, "console_green_light");
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 80%;
+
+  box-shadow: 0px 5px 10px
+    rgba(map-get(variables.$colors, "console_green_light"), 40%);
+  animation: blinker 2s linear infinite;
+}
+
+$defPadding: 3%;
+
+.def {
+  width: 96%;
+  height: 100%;
+  margin: auto;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 500px) {
+  .def {
+    font-size: 3vw;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.7;
+  }
+}

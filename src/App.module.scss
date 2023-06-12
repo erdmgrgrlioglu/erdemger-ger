@@ -20,7 +20,11 @@ li {
 }
 
 body {
-  position: absolute;
-  width: 100%;
+  width: 96%;
+  margin: auto;
   background-color: map-get(variables.$colors, "bg_color");
+}
+
+html {
+  scroll-behavior: smooth;
 }
