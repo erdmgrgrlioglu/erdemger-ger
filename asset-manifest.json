@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/erdemger-ger/static/css/main.4892ac3b.css",
-    "main.js": "/erdemger-ger/static/js/main.01b39993.js",
+    "main.css": "/erdemger-ger/static/css/main.68830e83.css",
+    "main.js": "/erdemger-ger/static/js/main.5fa974a9.js",
     "index.html": "/erdemger-ger/index.html",
-    "main.4892ac3b.css.map": "/erdemger-ger/static/css/main.4892ac3b.css.map",
-    "main.01b39993.js.map": "/erdemger-ger/static/js/main.01b39993.js.map"
+    "static/media/getFetch.cjs": "/erdemger-ger/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.68830e83.css.map": "/erdemger-ger/static/css/main.68830e83.css.map",
+    "main.5fa974a9.js.map": "/erdemger-ger/static/js/main.5fa974a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4892ac3b.css",
-    "static/js/main.01b39993.js"
+    "static/css/main.68830e83.css",
+    "static/js/main.5fa974a9.js"
   ]
 }
