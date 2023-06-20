@@ -17,11 +17,10 @@ export default function CamControls() {
 
     if (delta > interval) {
       state.camera.position.lerp(lerpVec, 0.01);
-
       delta = delta % interval;
     }
 
-    if (width < 450) {
+    if (width < 950) {
       lerpVec = new THREE.Vector3(0, 8, 8);
       state.camera.lookAt(0, 2, 0);
     } else {

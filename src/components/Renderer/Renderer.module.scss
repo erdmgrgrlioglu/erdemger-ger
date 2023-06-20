@@ -3,7 +3,7 @@
 // Dimensions
 $dot-size: 1px;
 $dot-space: 22px;
-$canvas-size: 800px;
+$canvas-size: 100vh;
 
 .background {
   background: linear-gradient(
@@ -29,7 +29,7 @@ $canvas-size: 800px;
 }
 
 Canvas {
-  height: 60vh !important;
+  height: calc($canvas-size - 180px) !important;
 }
 
 @media only screen and (max-width: 500px) {

@@ -5,20 +5,21 @@ $parallelogramPadding: 10px;
 
 .parallelogram {
   margin: auto;
-  text-align: center;
-  padding-top: $parallelogramPadding;
-  padding-bottom: $parallelogramPadding;
+  height: 10%;
   width: 80%;
+  border: 1px solid map-get(variables.$colors, "console_green_light");
+
+  display: flex;
+
+  cursor: pointer;
   transform: skewX($transformSkew);
-  border: 2px solid map-get(variables.$colors, "console_green_light");
   animation: blinker 2s linear infinite;
   box-shadow: 0px 5px 10px
     rgba(map-get(variables.$colors, "console_green_light"), 40%);
   text-shadow: 0px 5px 10px
     rgba(map-get(variables.$colors, "console_green_light"), 40%);
   transition: all 0.3s;
-  cursor: pointer;
-  border-radius: 5px;
+
   &:hover {
     box-shadow: 0px 15px 25px -5px rgba(map-get(variables.$colors, "console_green_light"), 40%);
     text-shadow: 0px 15px 25px -5px rgba(map-get(variables.$colors, "console_green_light"), 40%);
@@ -35,16 +36,8 @@ $parallelogramPadding: 10px;
 }
 
 .def {
-  width: 100%;
-  transform: skewX(-$transformSkew);
   margin: auto;
-  font-size: 80%;
-}
-
-@media only screen and (max-width: 500px) {
-  .def {
-    font-size: 3vw;
-  }
+  transform: skewX(-$transformSkew);
 }
 
 @keyframes blinker {

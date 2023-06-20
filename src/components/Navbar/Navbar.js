@@ -1,15 +1,13 @@
-import classes from "./Navbar.module.scss";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import * as Scroll from "react-scroll"; //https://www.npmjs.com/package/react-scroll
-
 import Time from "../Time/Time";
+
+import classes from "./Navbar.module.scss";
 
 export default function Navbar() {
   const [isActive, setActive] = useState(false);
 
   let navigate = useNavigate();
-  var scroll = Scroll.animateScroll;
 
   return (
     <header className={classes.header}>
@@ -21,19 +19,19 @@ export default function Navbar() {
           className={classes.text}
           onClick={() => {
             setActive(false);
-            scroll.scrollTo(0);
+            navigate("");
           }}
         >
           <p>Console</p>
         </div>
         <div className={classes.menu}>
           <div
-            className={`${classes.container} ${
-              isActive ? classes.change : null
-            }`}
             onClick={() => {
               setActive(!isActive);
             }}
+            className={`${classes.container} ${
+              isActive ? classes.change : null
+            }`}
           >
             <div className={classes.bar1}></div>
             <div className={classes.bar2}></div>
@@ -47,7 +45,6 @@ export default function Navbar() {
           onClick={() => {
             navigate("/projects");
             setActive(false);
-            scroll.scrollTo(1000);
           }}
         >
           <p>Projects</p>
@@ -57,7 +54,6 @@ export default function Navbar() {
           onClick={() => {
             setActive(false);
             navigate("/about");
-            scroll.scrollTo(1000);
           }}
         >
           <p>About</p>

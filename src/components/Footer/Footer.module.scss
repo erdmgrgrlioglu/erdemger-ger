@@ -48,3 +48,21 @@
     transform: translateX(-50%);
   }
 }
+
+.dropdown {
+  height: 0;
+  overflow: hidden;
+
+  .open {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.dropdownItem {
+  border: 1px solid map-get(variables.$colors, "console_green_light");
+
+  font-size: 1vmin;
+  background-color: map-get(variables.$colors, "bg_color");
+}

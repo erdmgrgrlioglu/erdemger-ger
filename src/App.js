@@ -1,21 +1,24 @@
-import { Routes, Route } from "react-router-dom";
-
-import { Console, AboutPage, ProjectsPage, SimulationPage } from "./pages";
-import { Navbar, Footer } from "./components";
-
 import "./App.module.scss";
 
+import React from "react";
+import { useTranslation } from "react-i18next";
+
 export default function App() {
-  return (
-    <>
-      <Navbar />
-      <Console id="home" />
-      <Routes>
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/simulation" element={<SimulationPage />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+  const { t, i18n, ready } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  if (ready) {
+    return (
+      <div className="App-header">
+        <h2>{t("Welcome_to_React")}</h2>
+        <button onClick={() => changeLanguage("de")}>tr</button>
+        <button onClick={() => changeLanguage("en")}>en</button>
+        <div>{t("localization_testing")}</div>
+      </div>
+    );
+  }
+  return <span>Loading...</span>;
 }

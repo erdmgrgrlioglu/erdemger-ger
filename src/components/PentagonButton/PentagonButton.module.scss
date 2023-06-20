@@ -1,0 +1,71 @@
+@use "/src/utilities/variables";
+
+$edge-size: 20px;
+$path: (
+  0 0,
+  100% 0,
+  100% calc(100% - $edge-size),
+  calc(100% - $edge-size) 100%,
+  0 100%,
+  0% 50%
+);
+
+.outside {
+  width: 80%;
+  height: 10%;
+  padding: 1px;
+  margin: auto;
+
+  display: inline-flex;
+  position: relative;
+
+  background: map-get(variables.$colors, "console_red_light");
+  text-shadow: 0px 5px 10px
+    rgba(map-get(variables.$colors, "console_red_light"), 40%);
+  clip-path: polygon($path);
+
+  animation: blinker 2s linear infinite;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    text-shadow: 0px 15px 25px
+      rgba(map-get(variables.$colors, "console_green_light"), 40%);
+    background: map-get(variables.$colors, "console_green_light");
+    transform: scale(1.05);
+    .inside {
+      background: map-get(variables.$colors, "console_green_dark");
+      color: map-get(variables.$colors, "console_green_light");
+    }
+  }
+
+  &:active {
+    background: map-get(variables.$colors, "console_green_light");
+    text-shadow: 0px 4px 8px
+      rgba(map-get(variables.$colors, "console_green_light"), 40%);
+    transform: scale(0.98);
+    .inside {
+      background: map-get(variables.$colors, "console_green_dark");
+      color: map-get(variables.$colors, "console_green_light");
+    }
+  }
+}
+
+.inside {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  background: map-get(variables.$colors, "console_red_dark");
+  color: map-get(variables.$colors, "console_red_light");
+  clip-path: polygon($path);
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.7;
+  }
+}

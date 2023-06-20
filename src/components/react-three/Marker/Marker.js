@@ -7,6 +7,8 @@ import SelectBilboard from "../bilboards/SelectBilboard/SelectBillboard";
 import TextBilboard from "../bilboards/TextBilboard/TextBillboard";
 
 export default function Marker(props) {
+  const [hasFocus, setFocus] = useState(false);
+
   function MarkerLines(props) {
     return (
       <group>
@@ -41,8 +43,6 @@ export default function Marker(props) {
       </group>
     );
   }
-
-  const [hasFocus, setFocus] = useState(false);
 
   //optimize hasFocus. when clicked, change opactiy rather than loading new meshes
   return (

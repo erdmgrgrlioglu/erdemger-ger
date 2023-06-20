@@ -1,66 +1,51 @@
 @use "/src/utilities/variables";
 
 .overlay {
-  position: absolute;
-  display: block;
   width: 85%;
-  height: fit-content;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: calc(85vh - 180px);
+  border: 1px solid map-get(variables.$colors, "console_red_light");
+  margin: auto;
+
+  position: absolute;
+  inset: 0;
+
   background-color: map-get(variables.$colors, "bg_color");
   z-index: 1;
-  border: 1px solid map-get(variables.$colors, "console_green_light");
-  margin: auto;
+  box-sizing: border-box;
 }
 
-//flex
-.flex_container {
-  width: 96%;
-  height: 20%;
-  border-bottom: 1px solid map-get(variables.$colors, "console_green_light");
+$title-bar-height: 10%;
+
+.titleBar {
+  width: 100%;
+  height: $title-bar-height;
+  margin: auto;
+
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: auto;
-}
-
-.flex_child {
-  color: map-get(variables.$colors, "console_red_light");
-  width: 100%;
-  font-weight: 600;
-  font-size: 5vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  text-shadow: 0px 5px 10px
-    rgba(map-get(variables.$colors, "console_red_light"), 40%);
+  box-sizing: border-box;
+
+  border-bottom: 1px solid map-get(variables.$colors, "console_red_light");
 }
 
-//barcode
-svg {
-  display: block;
-  margin: auto;
-}
-
-.barcode {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+$barcode-height: 50%;
 
 .title {
-  width: 100%;
-  color: map-get(variables.$colors, "console_red_light");
-  display: flex;
-  justify-content: center;
-  line-height: 60px;
-  font-weight: 600;
-  font-size: 5vw;
+  height: $barcode-height;
+  width: 40%;
+  margin-left: 10px;
 
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 3vmin !important;
+
+  color: map-get(variables.$colors, "console_red_light");
   text-shadow: 0px 5px 10px
     rgba(map-get(variables.$colors, "console_red_light"), 40%);
 }
@@ -70,45 +55,77 @@ svg {
   }
 }
 
-//vertical line
-.vl {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-left: 1px solid map-get(variables.$colors, "console_green_light");
+.barcode {
+  height: $barcode-height !important;
+  width: 20%;
+  margin-left: 5%;
 }
 
 //content
 .contentParent {
   width: 100%;
-  height: 80%;
+  height: calc(100% - $title-bar-height);
+
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: auto;
+
+  background: rgb(27, 14, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(27, 14, 30, 1) 0%,
+    rgba(28, 14, 30, 1) 40%,
+    rgba(53, 23, 34, 1) 80%,
+    rgba(53, 23, 34, 1) 100%
+  );
 }
 
 .content {
-  width: 50%;
+  width: 70%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-size: 3vmin;
 }
 
 .contentImage {
   height: 100%;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+
+  border: 1px solid map-get(variables.$colors, "console_green_light");
+  padding: 5px;
   object-fit: contain;
 }
 
 .contentText {
   margin: 5px;
+
   display: flex;
   flex-direction: column;
   text-align: left;
+  font-size: 3vmin;
 }
 
 .bold {
-  margin: auto;
   font-weight: 600;
+  margin: 5px; // delete in the future
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    font-size: 2vmin;
+  }
+}
+
+.focus {
+  background: map-get(variables.$colors, "console_green_light");
+  text-shadow: 0px 5px 10px
+    rgba(map-get(variables.$colors, "console_green_light"), 40%);
+  div {
+    background: map-get(variables.$colors, "console_green_dark");
+    color: map-get(variables.$colors, "console_green_light");
+  }
 }
