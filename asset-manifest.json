@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/erdemger-ger/static/css/main.5cc639b4.css",
-    "main.js": "/erdemger-ger/static/js/main.e9ce2e89.js",
+    "main.js": "/erdemger-ger/static/js/main.624a3077.js",
     "static/media/cyberpunk.webp": "/erdemger-ger/static/media/cyberpunk.c96f9a6d3095fc2a48a0.webp",
     "static/media/ai_art.webp": "/erdemger-ger/static/media/ai_art.b6705b73b2139d29cdda.webp",
     "static/media/Trio.webp": "/erdemger-ger/static/media/Trio.e0bf49673a16e47d3369.webp",
@@ -10,10 +10,10 @@
     "static/media/PixelCosmos_Studios_Logo.webp": "/erdemger-ger/static/media/PixelCosmos_Studios_Logo.40e306b8f14f6b6e939c.webp",
     "index.html": "/erdemger-ger/index.html",
     "main.5cc639b4.css.map": "/erdemger-ger/static/css/main.5cc639b4.css.map",
-    "main.e9ce2e89.js.map": "/erdemger-ger/static/js/main.e9ce2e89.js.map"
+    "main.624a3077.js.map": "/erdemger-ger/static/js/main.624a3077.js.map"
   },
   "entrypoints": [
     "static/css/main.5cc639b4.css",
-    "static/js/main.e9ce2e89.js"
+    "static/js/main.624a3077.js"
   ]
 }
