@@ -59,7 +59,7 @@ export default function ProjectsPage() {
             <img
               alt=""
               className={classes.contentImage}
-              src={require("../../ai_art.webp")}
+              src={require("../../images/ai_art.webp")}
             />
             <div className={classes.contentText}>
               {t("page.projects.content.general.text")}
@@ -88,7 +88,7 @@ export default function ProjectsPage() {
             <img
               alt=""
               className={classes.contentImage}
-              src={require("../../PixelCosmos_Studios_Logo.jpg")}
+              src={require("../../images/PixelCosmos_Studios_Logo.webp")}
             />
             <div className={classes.contentText}>
               <span>{t("page.projects.content.game_dev.text")}</span>
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
             <img
               alt=""
               className={classes.contentImage}
-              src={require("../../Trio.jpg")}
+              src={require("../../images/Trio.webp")}
             />
             <div className={classes.contentText}>
               {t("page.projects.content.music_mp4.text")}

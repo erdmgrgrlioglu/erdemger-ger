@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { Line } from "@react-three/drei";
 
-import LineMesh from "../meshes/LineMesh/LineMesh";
 import RingMesh from "../meshes/RingMesh/RingMesh";
 
 import SelectBilboard from "../bilboards/SelectBilboard/SelectBillboard";
@@ -12,32 +12,40 @@ export default function Marker(props) {
   function MarkerLines(props) {
     return (
       <group>
-        <LineMesh
+        <Line
           points={[
             [0, 1.2, 0],
             [0, 10, 0],
           ]}
+          color="#4b988a"
+          lineWidth={1}
           visible={props.visible}
         />
-        <LineMesh
+        <Line
           points={[
             [0, -1.2, 0],
             [0, -10, 0],
           ]}
+          color="#4b988a"
+          lineWidth={1}
           visible={props.visible}
         />
-        <LineMesh
+        <Line
           points={[
             [1.2, 0, 0],
             [20, 0, 0],
           ]}
+          color="#4b988a"
+          lineWidth={1}
           visible={props.visible}
         />
-        <LineMesh
+        <Line
           points={[
             [-1.2, 0, 0],
             [-20, 0, 0],
           ]}
+          color="#4b988a"
+          lineWidth={1}
           visible={props.visible}
         />
       </group>

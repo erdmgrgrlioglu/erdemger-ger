@@ -13,10 +13,6 @@ import classes from "./Footer.module.scss";
 export default function Footer() {
   const [isActive, setActive] = useState(false);
 
-  const changeLanguage = (lng) => {
-    i18next.changeLanguage(lng);
-  };
-
   return (
     <footer className={classes.footer}>
       <div>
@@ -45,7 +41,7 @@ export default function Footer() {
             className={classes.dropdownItem}
             onClick={() => {
               setActive(false);
-              changeLanguage("en");
+              i18next.changeLanguage("en");
             }}
           >
             English
@@ -54,7 +50,7 @@ export default function Footer() {
             className={classes.dropdownItem}
             onClick={() => {
               setActive(false);
-              changeLanguage("de");
+              i18next.changeLanguage("de");
             }}
           >
             Deutsch
@@ -63,7 +59,7 @@ export default function Footer() {
             className={classes.dropdownItem}
             onClick={() => {
               setActive(false);
-              changeLanguage("tr");
+              i18next.changeLanguage("tr");
             }}
           >
             Türkçe

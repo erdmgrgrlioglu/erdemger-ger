@@ -15,16 +15,14 @@ export default function SelectBilboard(props) {
 
   const [rerender, activateRerender] = useState(true);
 
-  function handleLanguageChanged() {
-    activateRerender(!rerender);
-  }
-
   useEffect(() => {
-    i18next.on("languageChanged", handleLanguageChanged);
+    i18next.on("languageChanged", () => {
+      activateRerender(!rerender);
+    });
     return () => {
-      i18next.off("languageChanged", handleLanguageChanged);
+      i18next.off("languageChanged");
     };
-  }, [handleLanguageChanged]);
+  });
 
   return (
     <Billboard

@@ -62,7 +62,8 @@ $barcode-height: 50%;
 .close {
   width: 50px;
   height: 100%;
-  margin-left: auto;
+  margin: auto;
+  margin-right: 1%;
 
   display: flex;
   justify-content: center;

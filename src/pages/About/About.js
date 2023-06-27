@@ -80,7 +80,7 @@ export default function AboutPage() {
             <img
               alt=""
               className={classes.contentImage}
-              src={require("../../cyberpunk.webp")}
+              src={require("../../images/cyberpunk.webp")}
             />
             <div className={classes.contentText}>
               {t("page.about.content.this_website.text")}

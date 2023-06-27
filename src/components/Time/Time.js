@@ -3,14 +3,22 @@ import React, { useEffect, useState } from "react";
 export default function Time() {
   const [clockState, setclockState] = useState("");
 
+  var offset = new Date().getTimezoneOffset();
+  var month = new Date().getMonth() + 1;
+  var year = new Date().getFullYear();
+
+  offset = -(offset / 60);
+  if (offset > -1) {
+    offset = ["+", String(offset)].join("");
+  }
+
   function getTime() {
     var date = new Date().getDate();
-    var month = new Date().getMonth() + 1;
-    var year = new Date().getFullYear();
     var hour = new Date().getHours();
     var min = new Date().getMinutes();
+
     if (String(date).length === 1) {
-      date = "0" + String(date);
+      date = ["0" + String(date)].join("");
     }
 
     return [
@@ -21,7 +29,8 @@ export default function Time() {
       "-",
       hour,
       min,
-      " utc+3",
+      " utc",
+      offset,
     ].join("");
   }
 

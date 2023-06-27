@@ -5,11 +5,7 @@ import Rotate from "../Rotate/Rotate";
 import Marker from "../Marker/Marker";
 
 export default function Model() {
-  const { t, ready } = useTranslation();
-
-  if (!ready) {
-    return <div>Loading...</div>;
-  }
+  const { t } = useTranslation();
 
   return (
     <>
