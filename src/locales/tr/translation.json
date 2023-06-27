@@ -1,0 +1,63 @@
+{
+  "console": {
+    "name": "Konsol",
+    "select": "Seç",
+    "connecting": "bağlanıyor"
+  },
+  "page": {
+    "about": {
+      "title": "H4KK1ND4",
+      "name": "Hakkında",
+
+      "content": {
+        "about_me": {
+          "title": "H4KK1ND4.B3N",
+          "text": "Istanbuldaki Türk-Alman Üniversitesinin Bilgisayar Mühendisliği bolümü hazırlığında almanca eğitimime devam etmekteyim. {{age}} Yaşındayım."
+        },
+        "this_website": {
+          "title": "BU_WEBS1TE",
+          "text": "Bir protfolyo websitesi yapma isteğimden yola çıkarak yapılmıştır. Yapımında web geliştirmenin güncel teknolojilerinden faydalandım. 'Futuristik' and 'Cyberpunk' dizayn prensiplerine sağdık kalmaya çalıştım. Three.js, Sass ve çokca react kutuphanesi kullanılmıştır."
+        },
+        "life_exe": {
+          "title": "H4Y4T.EXE",
+          "text": "Egitim",
+          "text1": "2017-2021, Istanbul Capa Fen Lisesi",
+          "text2": "2021-Şimdi, Turk-Alman Universitesi"
+        },
+        "contact_me": {
+          "title": "B4N4.ULAS1N"
+        }
+      }
+    },
+    "projects": {
+      "title": "_PR0J3L3R",
+      "name": "Projeler",
+
+      "content": {
+        "general": {
+          "title": "_G3NEL",
+          "text": "Yazılım, Bilim, Teknoloji ve Sanat alanlarıyla ilgileniyorum."
+        },
+        "web_dev": {
+          "title": "W3B.DEV",
+          "text": "Bu websitesi React.js, Three.js, Sass ve daha bircok kutuphane ile desteklenmekedir."
+        },
+        "game_dev": {
+          "title": "0YUN.DEV",
+          "text": "Şu anda küçük ölçekli bir mobil oyun üzerinde çalışıyorum.",
+          "text1": "İlgilendiğim Başlıklar:",
+          "text2": "Unity 2D Oyun Geliştirme",
+          "text3": "Unity Netcode"
+        },
+        "music_mp4": {
+          "title": "MUS1K_MP4",
+          "text": "'Trio Dreirad' adında arkadaşlarımla beraber kurduğumuz yaylı bir trioda çellist olarak çalmaktayım."
+        }
+      }
+    },
+    "simulation": {
+      "title": "S1MULASYON.JS",
+      "text": "S4K1N!_B4SM4"
+    }
+  }
+}

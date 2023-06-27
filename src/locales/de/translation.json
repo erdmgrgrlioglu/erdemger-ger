@@ -1,0 +1,63 @@
+{
+  "console": {
+    "name": "Konsole",
+    "select": "Auswählen",
+    "connecting": "wird verbunden"
+  },
+  "page": {
+    "about": {
+      "title": "ÜB3R",
+      "name": "Über",
+
+      "content": {
+        "about_me": {
+          "title": "ÜB3R.M1CH",
+          "text": "Ich setze mein Vorbereitungsjahr des Informatikprogramms an der Türkisch-Deutsche Universität in Istanbul fort. Ich bin {{age}} Jahre alt."
+        },
+        "this_website": {
+          "title": "DI3SE_WEBS1TE",
+          "text": "Es wurde auf der Grundlage meines Wunsches entworfen, eine Portfolio-Website zu erstellen. Ich habe bei der Erstellung von den aktuellen Technologien der Webentwicklung profitiert. Ich habe versucht, mich an die Designprinzipien „Futuristisch“ und „Cyberpunk“ zu halten. Zum Einsatz kommen Three.js, Sass und viele React-Bibliotheken."
+        },
+        "life_exe": {
+          "title": "L3B3N.EXE",
+          "text": "Ausbildung",
+          "text1": "2017-2021, Istanbul Capa Gymnasium der Naturwissenschaften",
+          "text2": "2021-Jetzt, Türkisch-Deutsche Universität"
+        },
+        "contact_me": {
+          "title": "K0NT4KTIERE.M1CH"
+        }
+      }
+    },
+    "projects": {
+      "title": "_PR0J3KT3",
+      "name": "Projekte",
+
+      "content": {
+        "general": {
+          "title": "_4LLG3MEIN",
+          "text": "Ich interessiere mich für die Bereiche Software, Wissenschaft, Technologie und Kunst."
+        },
+        "web_dev": {
+          "title": "W3B.3NT",
+          "text": "Diese Website wird von React.js, Three.js, Sass und vielen weiteren Bibliotheken betrieben."
+        },
+        "game_dev": {
+          "title": "SP1EL.3NT",
+          "text": "Ich arbeite derzeit an einem kleinen Handyspiel.",
+          "text1": "Themen, die mich interessieren:",
+          "text2": "Unity 2D-Spieleentwicklung",
+          "text3": "Unity Netcode"
+        },
+        "music_mp4": {
+          "title": "MUS1K_MP4",
+          "text": "Ich spiele als Cellist in einem Streichtrio, das ich mit meinen Freunden gegründet habe und das „Trio Dreirad“ heißt."
+        }
+      }
+    },
+    "simulation": {
+      "title": "S1MULAT1ON.JS",
+      "text": "KL1CKE_N!CHT"
+    }
+  }
+}

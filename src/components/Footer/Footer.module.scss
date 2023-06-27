@@ -49,20 +49,40 @@
   }
 }
 
+.language {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bug {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .dropdown {
   height: 0;
   overflow: hidden;
+}
 
-  .open {
-    height: auto;
-    display: flex;
-    flex-direction: row;
-  }
+.open {
+  height: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .dropdownItem {
   border: 1px solid map-get(variables.$colors, "console_green_light");
+  height: 40%;
+  padding: 7px;
+  margin: 5px;
+  font-size: 1rem;
+}
 
-  font-size: 1vmin;
-  background-color: map-get(variables.$colors, "bg_color");
+@media only screen and (max-width: 450px) {
+  .copyright {
+    display: none;
+  }
 }

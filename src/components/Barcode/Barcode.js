@@ -15,7 +15,13 @@ export default function Barcode(props) {
         props.lineColor
       );
     }
-  }, [props.value, props.aspectRatio, props.ecl, props.pixelRatio]);
+  }, [
+    props.value,
+    props.aspectRatio,
+    props.ecl,
+    props.pixelRatio,
+    props.lineColor,
+  ]);
 
   return <canvas ref={canvasRef} className={props.className} />;
 }

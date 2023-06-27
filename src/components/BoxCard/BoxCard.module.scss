@@ -14,12 +14,11 @@
   animation: blinker 2s linear infinite;
 }
 
-$defPadding: 3%;
-
 .def {
   width: 90%;
   margin: auto;
   word-wrap: break-word;
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

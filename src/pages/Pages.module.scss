@@ -19,7 +19,6 @@ $title-bar-height: 10%;
 .titleBar {
   width: 100%;
   height: $title-bar-height;
-  margin: auto;
 
   display: flex;
   flex-direction: row;
@@ -31,6 +30,11 @@ $title-bar-height: 10%;
 }
 
 $barcode-height: 50%;
+.barcode {
+  height: $barcode-height !important;
+  width: 20%;
+  margin-left: 5%;
+}
 
 .title {
   height: $barcode-height;
@@ -38,9 +42,9 @@ $barcode-height: 50%;
   margin-left: 10px;
 
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  justify-content: left;
 
   font-weight: 600;
   font-size: 3vmin !important;
@@ -55,10 +59,20 @@ $barcode-height: 50%;
   }
 }
 
-.barcode {
-  height: $barcode-height !important;
-  width: 20%;
-  margin-left: 5%;
+.close {
+  width: 50px;
+  height: 100%;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: map-get(variables.$colors, "console_red_light");
+  opacity: 1;
+}
+.close:hover {
+  color: map-get(variables.$colors, "console_green_light");
 }
 
 //content
@@ -89,10 +103,13 @@ $barcode-height: 50%;
   text-align: center;
   font-size: 3vmin;
 }
-
+@media only screen and (max-width: 500px) {
+  .content {
+    font-size: 2vmin;
+  }
+}
 .contentImage {
-  height: 100%;
-  width: 80%;
+  height: 15vw;
   margin: auto;
 
   border: 1px solid map-get(variables.$colors, "console_green_light");
@@ -112,12 +129,6 @@ $barcode-height: 50%;
 .bold {
   font-weight: 600;
   margin: 5px; // delete in the future
-}
-
-@media only screen and (max-width: 500px) {
-  .content {
-    font-size: 2vmin;
-  }
 }
 
 .focus {

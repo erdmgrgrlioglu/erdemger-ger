@@ -44,7 +44,6 @@ export default function Marker(props) {
     );
   }
 
-  //optimize hasFocus. when clicked, change opactiy rather than loading new meshes
   return (
     <group {...props}>
       <group rotation={[-0.7, 0, 0]}>
@@ -52,7 +51,10 @@ export default function Marker(props) {
         <MarkerLines visible={hasFocus} />
       </group>
       <mesh
-        onClick={(event) => (setFocus(true), event.stopPropagation())}
+        onClick={(event) => {
+          setFocus(true);
+          event.stopPropagation();
+        }}
         onPointerMissed={() => setFocus(false)}
       >
         <sphereGeometry attach="geometry" args={[1, 8, 8]} />

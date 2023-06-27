@@ -1,7 +1,6 @@
 export default function License() {
   return (
-    <div>
-      {" "}
+    <div style={{ display: "none" }}>
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
         <img
           alt="Creative Commons License"
@@ -12,9 +11,8 @@ export default function License() {
       This work is licensed under a{" "}
       <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
         Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-        License
+        License.
       </a>
-      .
     </div>
   );
 }

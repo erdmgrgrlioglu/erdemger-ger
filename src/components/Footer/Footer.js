@@ -1,16 +1,21 @@
 import React, { useState } from "react";
+import i18next from "i18next";
 import {
   FaCreativeCommons,
   FaCreativeCommonsBy,
   FaCreativeCommonsNc,
   FaCreativeCommonsSa,
   FaLanguage,
+  FaBug,
 } from "react-icons/fa";
 import classes from "./Footer.module.scss";
-import { Tube } from "@react-three/drei";
 
 export default function Footer() {
   const [isActive, setActive] = useState(false);
+
+  const changeLanguage = (lng) => {
+    i18next.changeLanguage(lng);
+  };
 
   return (
     <footer className={classes.footer}>
@@ -28,49 +33,54 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div>
-        <FaLanguage
-          size="20"
-          onClick={() => {
-            setActive(!isActive);
-          }}
-        />
-        <div className={isActive ? classes.dropdown.open : classes.dropdown}>
-          <div className={classes.dropdownItemParent}>
-            <div
-              className={classes.dropdownItem}
-              onClick={() => {
-                setActive(false);
-              }}
-            >
-              English
-            </div>
-            <div
-              className={classes.dropdownItem}
-              onClick={() => {
-                setActive(false);
-              }}
-            >
-              Deutsch
-            </div>
-            <div
-              className={classes.dropdownItem}
-              onClick={() => {
-                setActive(false);
-              }}
-            >
-              Turkce
-            </div>
+      <div
+        className={classes.language}
+        onClick={() => {
+          setActive(!isActive);
+        }}
+      >
+        <FaLanguage size="20" />
+        <div className={isActive ? classes.open : classes.dropdown}>
+          <div
+            className={classes.dropdownItem}
+            onClick={() => {
+              setActive(false);
+              changeLanguage("en");
+            }}
+          >
+            English
+          </div>
+          <div
+            className={classes.dropdownItem}
+            onClick={() => {
+              setActive(false);
+              changeLanguage("de");
+            }}
+          >
+            Deutsch
+          </div>
+          <div
+            className={classes.dropdownItem}
+            onClick={() => {
+              setActive(false);
+              changeLanguage("tr");
+            }}
+          >
+            Türkçe
           </div>
         </div>
       </div>
-      <div>
+      <div className={classes.copyright}>
         <FaCreativeCommons />
         <FaCreativeCommonsBy />
         <FaCreativeCommonsNc />
         <FaCreativeCommonsSa />
       </div>
-      <div>V 0 . 0 . 1</div>
+      <div>
+        <div className={classes.bug}>
+          <FaBug size="10" />V 1 . 0 . 1
+        </div>
+      </div>
     </footer>
   );
 }

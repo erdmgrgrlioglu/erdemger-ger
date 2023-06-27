@@ -1,0 +1,63 @@
+{
+  "console": {
+    "name": "Console",
+    "select": "Select",
+    "connecting": "connecting"
+  },
+  "page": {
+    "about": {
+      "title": "AB_0UT",
+      "name": "About",
+
+      "content": {
+        "about_me": {
+          "title": "AB_0UT.M3",
+          "text": "I am continuing my preparatory year of the Computer Science Program in Turkish-German University in Istanbul. I'm {{age}} years old."
+        },
+        "this_website": {
+          "title": "TH1S_WEBS1TE",
+          "text": "It was designed based on my desire to make a portfolio website. I have benefited from the current technologies of web development in its construction. I tried to stick to the 'Futuristic' and 'Cyberpunk' design principles. Three.js, Sass and many React libraries are used."
+        },
+        "life_exe": {
+          "title": "L1FE.EXE",
+          "text": "Education",
+          "text1": "2017-2021, Istanbul Capa Science Highschool",
+          "text2": "2021-Current, Turkish-German University"
+        },
+        "contact_me": {
+          "title": "C0NT4CT.M3"
+        }
+      }
+    },
+    "projects": {
+      "title": "_PR0J3CTS",
+      "name": "Projects",
+
+      "content": {
+        "general": {
+          "title": "_G3NER4L",
+          "text": "I am interested in the fields of Software, Science, Technology and Art."
+        },
+        "web_dev": {
+          "title": "W3B.DEV",
+          "text": "This website is powered by React.js, Three.js, Sass and many more libraries."
+        },
+        "game_dev": {
+          "title": "G4ME.DEV",
+          "text": "I'm currently working on a small scale mobile game.",
+          "text1": "Topics I'm Interested In:",
+          "text2": "Unity 2D Game Development",
+          "text3": "Unity Netcode"
+        },
+        "music_mp4": {
+          "title": "MUS1C_MP4",
+          "text": "I play as a cellist in a string trio that I founded with my friends called 'Trio Dreirad'."
+        }
+      }
+    },
+    "simulation": {
+      "title": "S1MULAT1ON.JS",
+      "text": "D0N_T CL1CK"
+    }
+  }
+}

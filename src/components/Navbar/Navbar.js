@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import Time from "../Time/Time";
 
 import classes from "./Navbar.module.scss";
@@ -8,6 +10,8 @@ export default function Navbar() {
   const [isActive, setActive] = useState(false);
 
   let navigate = useNavigate();
+
+  const { t } = useTranslation();
 
   return (
     <header className={classes.header}>
@@ -22,7 +26,7 @@ export default function Navbar() {
             navigate("");
           }}
         >
-          <p>Console</p>
+          <p>{t("console.name")}</p>
         </div>
         <div className={classes.menu}>
           <div
@@ -47,7 +51,7 @@ export default function Navbar() {
             setActive(false);
           }}
         >
-          <p>Projects</p>
+          <p>{t("page.about.name")}</p>
         </div>
         <div
           className={classes.dropdownItem}
@@ -56,7 +60,7 @@ export default function Navbar() {
             navigate("/about");
           }}
         >
-          <p>About</p>
+          <p>{t("page.projects.name")}</p>
         </div>
       </div>
     </header>

@@ -1,7 +1,7 @@
 @use "/src/utilities/variables";
 
 .background {
-  width: 130px;
+  width: fit-content;
   padding: 2px;
   margin-right: 1vw;
 
@@ -15,8 +15,9 @@
 
 .dotBackground {
   background-color: map-get(variables.$colors, "bg_color");
+  border: 1px solid map-get(variables.$colors, "console_red_light");
   height: 18px;
-  width: 21px;
+  width: 22px;
   margin: auto;
 }
 
