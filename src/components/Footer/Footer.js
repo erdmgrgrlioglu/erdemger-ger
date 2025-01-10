@@ -44,7 +44,7 @@ export default function Footer() {
               i18next.changeLanguage("en");
             }}
           >
-            English
+            <div>English</div>
           </div>
           <div
             className={classes.dropdownItem}
@@ -53,7 +53,7 @@ export default function Footer() {
               i18next.changeLanguage("de");
             }}
           >
-            Deutsch
+            <div>Deutsch</div>
           </div>
           <div
             className={classes.dropdownItem}
@@ -62,7 +62,7 @@ export default function Footer() {
               i18next.changeLanguage("tr");
             }}
           >
-            Türkçe
+            <div>Türkçe</div>
           </div>
         </div>
       </div>

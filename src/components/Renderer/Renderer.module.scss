@@ -29,7 +29,7 @@ $canvas-size: 100vh;
 }
 
 Canvas {
-  height: calc($canvas-size - 180px) !important;
+  height: calc(100vh - 240px) !important;
 }
 
 @media only screen and (max-width: 500px) {

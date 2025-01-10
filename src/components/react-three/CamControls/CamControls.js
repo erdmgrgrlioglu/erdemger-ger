@@ -7,14 +7,10 @@ export default function CamControls() {
   const { width } = useWindowDimensions();
 
   var lerpVec = new THREE.Vector3(0, 5, 5);
-  let clock = new THREE.Clock();
-  let delta = 0;
 
   let interval = 1 / 30;
 
-  useFrame((state) => {
-    delta += clock.getDelta();
-
+  useFrame((state, delta) => {
     if (delta > interval) {
       state.camera.position.lerp(lerpVec, 0.01);
       delta = delta % interval;

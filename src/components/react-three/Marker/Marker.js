@@ -66,10 +66,9 @@ export default function Marker(props) {
         onPointerMissed={() => setFocus(false)}
       >
         <sphereGeometry attach="geometry" args={[1, 8, 8]} />
-        <meshStandardMaterial visible={false} />
+        <meshBasicMaterial visible={false} />
         <TextBilboard text={props.text} />
       </mesh>
-
       {hasFocus && (
         <SelectBilboard link={props.link} position={[0, 1.5, -1.2]} />
       )}

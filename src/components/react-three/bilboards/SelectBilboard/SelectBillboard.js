@@ -15,14 +15,16 @@ export default function SelectBilboard(props) {
 
   const [rerender, activateRerender] = useState(true);
 
+  function handleLanguageChanged() {
+    activateRerender(!rerender);
+  }
+
   useEffect(() => {
-    i18next.on("languageChanged", () => {
-      activateRerender(!rerender);
-    });
+    i18next.on("languageChanged", handleLanguageChanged);
     return () => {
-      i18next.off("languageChanged");
+      i18next.off("languageChanged", handleLanguageChanged);
     };
-  });
+  }, [handleLanguageChanged]);
 
   return (
     <Billboard
@@ -35,7 +37,7 @@ export default function SelectBilboard(props) {
       <Plane args={[6, 1]} color="#316766" />
       <Center cacheKey={rerender}>
         <Text3D size={0.6} font={GlobalFont} height={0.06}>
-          <meshLambertMaterial attach="material" color="#4b988a" />
+          <meshBasicMaterial attach="material" color="#4b988a" />
           {t("console.select")}
         </Text3D>
       </Center>

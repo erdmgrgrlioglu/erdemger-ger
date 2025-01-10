@@ -3,7 +3,7 @@ export default function Plane(props) {
   return (
     <mesh position={props.position} rotation={props.rotation}>
       <planeGeometry attach="geometry" args={props.args} />
-      <meshLambertMaterial attach="material" color={props.color} />
+      <meshBasicMaterial attach="material" color={props.color} />
     </mesh>
   );
 }

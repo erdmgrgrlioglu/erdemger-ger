@@ -15,7 +15,6 @@ export default function Renderer() {
         <ConnectingBox />
       </div>
       <Canvas>
-        <ambientLight intensity={0.8} />
         <Suspense fallback={null}>
           <OrbitControls enableZoom={false} />
           <CamControls />

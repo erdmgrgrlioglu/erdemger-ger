@@ -25,4 +25,5 @@ body {
   width: 96%;
   margin: auto;
   background-color: map-get(variables.$colors, "bg_color");
+  font-size: 1rem;
 }

@@ -2,16 +2,13 @@
 
 .footer {
   height: 60px;
-  width: 96%;
   border-top: 1px solid map-get(variables.$colors, "console_green_light");
   background-color: map-get(variables.$colors, "bg_color");
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  position: fixed;
-  bottom: 0;
-  z-index: 2;
 }
 
 .text {
@@ -74,11 +71,13 @@
 }
 
 .dropdownItem {
-  border: 1px solid map-get(variables.$colors, "console_green_light");
-  height: 40%;
-  padding: 7px;
   margin: 5px;
+  border: 1px solid map-get(variables.$colors, "console_green_light");
+
   font-size: 1rem;
+  div {
+    padding: 7px;
+  }
 }
 
 @media only screen and (max-width: 450px) {

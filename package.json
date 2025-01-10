@@ -8,7 +8,6 @@
     "@react-three/fiber": "^8.8.9",
     "i18next": "^23.1.0",
     "i18next-browser-languagedetector": "^7.0.2",
-    "node-sass": "^7.0.3",
     "pdf417-generator": "github:pkoretic/pdf417-generator",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,9 +16,8 @@
     "react-native-web": "^0.19.4",
     "react-router-dom": "^6.4.1",
     "react-scripts": "^5.0.1",
-    "react-three-fiber": "^6.0.13",
     "sass": "^1.55.0",
-    "three": "^0.145.0"
+    "three-mesh-bvh": "^0.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
