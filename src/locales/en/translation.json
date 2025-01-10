@@ -12,7 +12,7 @@
       "content": {
         "about_me": {
           "title": "AB_0UT.M3",
-          "text": "I am continuing my preparatory year of the Computer Science Program in Turkish-German University in Istanbul. I'm {{age}} years old."
+          "text": "I am continuing my computer science studies at TU Darmstadt. I'm {{age}} years old."
         },
         "this_website": {
           "title": "TH1S_WEBS1TE",
@@ -22,7 +22,8 @@
           "title": "L1FE.EXE",
           "text": "Education",
           "text1": "2017-2021, Istanbul Capa Science Highschool",
-          "text2": "2021-Current, Turkish-German University"
+          "text2": "2021-2023, Turkish-German University",
+          "text3": "2023-Current, TU Darmstadt"
         },
         "contact_me": {
           "title": "C0NT4CT.M3"
@@ -46,8 +47,7 @@
           "title": "G4ME.DEV",
           "text": "I'm currently working on a small scale mobile game.",
           "text1": "Topics I'm Interested In:",
-          "text2": "Unity 2D Game Development",
-          "text3": "Unity Netcode"
+          "text2": "Godot Game Engine, Multiplayer"
         },
         "music_mp4": {
           "title": "MUS1C_MP4",

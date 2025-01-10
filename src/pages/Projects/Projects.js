@@ -91,20 +91,20 @@ export default function ProjectsPage() {
               src={require("../../images/PixelCosmos_Studios_Logo.webp")}
             />
             <div className={classes.contentText}>
-              <span>{t("page.projects.content.game_dev.text")}</span>
-              <p />
-              <span className={classes.bold}>
+              <p>{t("page.projects.content.game_dev.text")}</p>
+              <p className={classes.bold}>
                 {t("page.projects.content.game_dev.text1")}
-              </span>
-              <span>{t("page.projects.content.game_dev.text2")}</span>
-              <span>{t("page.projects.content.game_dev.text3")}</span>
-              <p />
-              <span>
-                <Link>
+              </p>
+              <p>{t("page.projects.content.game_dev.text2")}</p>
+              <p>
+                <Link
+                  to="https://erdmgrgrlioglu.github.io/pixelcosmos-website/"
+                  target="_blank"
+                >
                   <FaLink size="15" />
                   PixelCosmos Studios
                 </Link>
-              </span>
+              </p>
             </div>
           </BoxCard>
         )}

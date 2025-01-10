@@ -12,7 +12,7 @@
       "content": {
         "about_me": {
           "title": "ÜB3R.M1CH",
-          "text": "Ich setze mein Vorbereitungsjahr des Informatikprogramms an der Türkisch-Deutsche Universität in Istanbul fort. Ich bin {{age}} Jahre alt."
+          "text": "Ich setze mein Informatikstudium an der TU Darmstadt fort. Ich bin {{age}} Jahre alt."
         },
         "this_website": {
           "title": "DI3SE_WEBS1TE",
@@ -22,7 +22,8 @@
           "title": "L3B3N.EXE",
           "text": "Ausbildung",
           "text1": "2017-2021, Istanbul Capa Gymnasium der Naturwissenschaften",
-          "text2": "2021-Jetzt, Türkisch-Deutsche Universität"
+          "text2": "2021-2023, Türkisch-Deutsche Universität",
+          "text3": "2023-Jetzt, TU Darmstadt"
         },
         "contact_me": {
           "title": "K0NT4KTIERE.M1CH"
@@ -46,8 +47,7 @@
           "title": "SP1EL.3NT",
           "text": "Ich arbeite derzeit an einem kleinen Handyspiel.",
           "text1": "Themen, die mich interessieren:",
-          "text2": "Unity 2D-Spieleentwicklung",
-          "text3": "Unity Netcode"
+          "text2": "Godot-Spiel-Engine, Mehrspieler"
         },
         "music_mp4": {
           "title": "MUS1K_MP4",

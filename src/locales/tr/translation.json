@@ -12,7 +12,7 @@
       "content": {
         "about_me": {
           "title": "H4KK1ND4.B3N",
-          "text": "Istanbuldaki Türk-Alman Üniversitesinin Bilgisayar Mühendisliği bolümü hazırlığında almanca eğitimime devam etmekteyim. {{age}} Yaşındayım."
+          "text": "Bilgisayar Mühendisliği eğitimime TU Darmstadt'da devam ediyorum {{age}} Yaşındayım."
         },
         "this_website": {
           "title": "BU_WEBS1TE",
@@ -22,7 +22,8 @@
           "title": "H4Y4T.EXE",
           "text": "Egitim",
           "text1": "2017-2021, Istanbul Capa Fen Lisesi",
-          "text2": "2021-Şimdi, Turk-Alman Universitesi"
+          "text2": "2021-2023, Turk-Alman Universitesi",
+          "text3": "2023-Şimdi, TU Darmstadt"
         },
         "contact_me": {
           "title": "B4N4.ULAS1N"
@@ -46,8 +47,7 @@
           "title": "0YUN.DEV",
           "text": "Şu anda küçük ölçekli bir mobil oyun üzerinde çalışıyorum.",
           "text1": "İlgilendiğim Başlıklar:",
-          "text2": "Unity 2D Oyun Geliştirme",
-          "text3": "Unity Netcode"
+          "text2": "Godot Oyun Motoru, Çoklu Oyuncu"
         },
         "music_mp4": {
           "title": "MUS1K_MP4",

@@ -96,11 +96,10 @@ export default function AboutPage() {
               <FaGraduationCap size="10vmin" />
             </div>
             <div className={classes.contentText}>
-              <span>{t("page.about.content.life_exe.text")}</span>
-              <p />
-              <span>{t("page.about.content.life_exe.text1")}</span>
-              <p />
-              <span>{t("page.about.content.life_exe.text2")}</span>
+              <p>{t("page.about.content.life_exe.text")}</p>
+              <p>{t("page.about.content.life_exe.text1")}</p>
+              <p>{t("page.about.content.life_exe.text2")}</p>
+              <p>{t("page.about.content.life_exe.text3")}</p>
             </div>
           </BoxCard>
         )}
