@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/erdemger-ger/static/css/main.e6e12491.css",
-    "main.js": "/erdemger-ger/static/js/main.a2172c83.js",
+    "main.css": "/erdemger-ger/static/css/main.d6ab00a9.css",
+    "main.js": "/erdemger-ger/static/js/main.1c545abc.js",
     "static/media/cyberpunk.webp": "/erdemger-ger/static/media/cyberpunk.c96f9a6d3095fc2a48a0.webp",
     "static/media/ai_art.webp": "/erdemger-ger/static/media/ai_art.b6705b73b2139d29cdda.webp",
     "static/media/Trio.webp": "/erdemger-ger/static/media/Trio.e0bf49673a16e47d3369.webp",
@@ -9,11 +9,11 @@
     "static/media/Oxanium-SemiBold.ttf": "/erdemger-ger/static/media/Oxanium-SemiBold.a3957f6888070262d4b6.ttf",
     "static/media/PixelCosmos_Studios_Logo.webp": "/erdemger-ger/static/media/PixelCosmos_Studios_Logo.40e306b8f14f6b6e939c.webp",
     "index.html": "/erdemger-ger/index.html",
-    "main.e6e12491.css.map": "/erdemger-ger/static/css/main.e6e12491.css.map",
-    "main.a2172c83.js.map": "/erdemger-ger/static/js/main.a2172c83.js.map"
+    "main.d6ab00a9.css.map": "/erdemger-ger/static/css/main.d6ab00a9.css.map",
+    "main.1c545abc.js.map": "/erdemger-ger/static/js/main.1c545abc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6e12491.css",
-    "static/js/main.a2172c83.js"
+    "static/css/main.d6ab00a9.css",
+    "static/js/main.1c545abc.js"
   ]
 }
